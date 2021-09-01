@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>My page</title>
+    </head>
+    <body>
+        <script>
+        var x=3;
+        var y=3;
+        function sum(x,y){
+            return x+y;
+        };
+
+        function rest(x,y){
+            return x-y;
+        };
+
+        function multiplication(x,y){
+            return x*y;
+        };
+
+        function divide(x,y){
+            return x/y;
+        };
+
+        function module(x,y){
+            return x%y;
+        };
+        var a=sum(x,y);
+        var b=rest(x,y);
+        var c=multiplication(x,y);
+        var d=divide(x, y);
+        var e=module(x,y);
+        </script>
+        <p id="exercises"></p>
+        <button type="button" onclick="document.getElementById('exercises').innerHTML=a">Sum</button>
+        <button type="button" onclick="document.getElementById('exercises').innerHTML=b">Rest</button>
+        <button type="button" onclick="document.getElementById('exercises').innerHTML=c">Multiplication</button>
+        <button type="button" onclick="document.getElementById('exercises').innerHTML=d">Divide</button>
+        <button type="button" onclick="document.getElementById('exercises').innerHTML=e">Module</button>
+    </body>
+</html>
